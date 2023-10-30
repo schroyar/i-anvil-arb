@@ -8,4 +8,4 @@ ARG FORK_URL
 ENV FORK_URL=${FORK_URL:-"https://rpc.ankr.com/arbitrum"}
 EXPOSE $PORT
 
-ENTRYPOINT anvil --host 0.0.0.0 -m "$MNEMONIC" -p $PORT --fork-url $FORK_URL --block-time 1
+ENTRYPOINT anvil --host 0.0.0.0 -m "$MNEMONIC" -p $PORT --fork-url $FORK_URL --block-time 12
